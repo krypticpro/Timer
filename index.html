@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="timericon.png" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="timer">
+        <h1>Timer</h1>
+
+        <div class="display">
+          <input type="number" id="hrInput" placeholder="00" min="0" max="99" />
+          <span> : </span>
+          <input
+            type="number"
+            id="minInput"
+            placeholder="00"
+            min="0"
+            max="59"
+          />
+          <span> : </span>
+          <input
+            type="number"
+            id="secInput"
+            placeholder="00"
+            min="0"
+            max="59"
+          />
+        </div>
+
+        <div class="button-container">
+          <input type="submit" id="setTimer" value="⏳" />
+          <button id="startTimer" class="start">▶</button>
+          <button id="stopTimer" class="stop">⏹</button>
+          <button id="resetTimer" class="reset">⟲</button>
+        </div>
+      </div>
+
+      <div id="stopwatch">
+        <h1>Stopwatch</h1>
+
+        <div class="display">
+          <span id="hrs">00</span>
+          <span> : </span>
+          <span id="mins">00</span>
+          <span> : </span>
+          <span id="secs">00</span>
+        </div>
+
+        <br />
+        <div class="button-container">
+          <button id="startStopwatch" class="start">▶</button>
+          <button id="stopStopwatch" class="stop">⏹</button>
+          <button id="resetStopwatch" class="reset">⟲</button>
+        </div>
+
+        <script src="timer.js"></script>
+        <script src="stopwatch.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
